@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Finanças Pessoais</title>
+</head>
+<body>
+  <main>
+    <form action="http://localhost:3000/transfers" method="post">
+      <h2>Fazer uma nova transferencia</h2>
+
+      <label for="name">Nome da transferencia:</label><br>
+      <input class="label" type="text" id="name" name="name"><br>
+      <label class="label" for="amount">Amount:</label><br>
+      <input type="number" id="amount" name="amount" step="any"><br>
+
+      <button id="saveButton">Salvar</button>
+    </form>
+    <div>
+      <h2>Historico de transferencias</h2>
+      <section id="transfers"></section>
+    </div>
+    <div>
+        <h2>Saldo</h2>
+        <section id="balance">R$ 0.00</section>
+    </div>
+  </main>
+
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
